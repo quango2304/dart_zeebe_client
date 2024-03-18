@@ -1344,6 +1344,7 @@ class EvaluateDecisionResponse extends $pb.GeneratedMessage {
     $core.String? failedDecisionId,
     $core.String? failureMessage,
     $core.String? tenantId,
+    $fixnum.Int64? decisionInstanceKey,
   }) {
     final $result = create();
     if (decisionKey != null) {
@@ -1379,6 +1380,9 @@ class EvaluateDecisionResponse extends $pb.GeneratedMessage {
     if (tenantId != null) {
       $result.tenantId = tenantId;
     }
+    if (decisionInstanceKey != null) {
+      $result.decisionInstanceKey = decisionInstanceKey;
+    }
     return $result;
   }
   EvaluateDecisionResponse._() : super();
@@ -1397,6 +1401,7 @@ class EvaluateDecisionResponse extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'failedDecisionId', protoName: 'failedDecisionId')
     ..aOS(10, _omitFieldNames ? '' : 'failureMessage', protoName: 'failureMessage')
     ..aOS(11, _omitFieldNames ? '' : 'tenantId', protoName: 'tenantId')
+    ..aInt64(12, _omitFieldNames ? '' : 'decisionInstanceKey', protoName: 'decisionInstanceKey')
     ..hasRequiredFields = false
   ;
 
@@ -1530,6 +1535,16 @@ class EvaluateDecisionResponse extends $pb.GeneratedMessage {
   $core.bool hasTenantId() => $_has(10);
   @$pb.TagNumber(11)
   void clearTenantId() => clearField(11);
+
+  /// the unique key identifying this decision evaluation
+  @$pb.TagNumber(12)
+  $fixnum.Int64 get decisionInstanceKey => $_getI64(11);
+  @$pb.TagNumber(12)
+  set decisionInstanceKey($fixnum.Int64 v) { $_setInt64(11, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasDecisionInstanceKey() => $_has(11);
+  @$pb.TagNumber(12)
+  void clearDecisionInstanceKey() => clearField(12);
 }
 
 class EvaluatedDecision extends $pb.GeneratedMessage {

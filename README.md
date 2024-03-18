@@ -1,7 +1,7 @@
 # Dart client for ZeeBe
-the client is generated from [proto file](https://github.com/camunda/zeebe/blob/clients/go/v8.5.0-alpha1/gateway-protocol/src/main/proto/gateway.proto) using document [here](https://grpc.io/docs/languages/dart/quickstart/)
+the client is generated from [proto file](https://github.com/camunda/zeebe/blob/clients/go/v8.5.0-alpha2/zeebe/gateway-protocol/src/main/proto/gateway.proto) using document [here](https://grpc.io/docs/languages/dart/quickstart/)
 
-version: 8.5.0-alpha1, you can generate other Zeebee version by following steps:
+version: 8.5.0-alpha2, you can generate other Zeebee version by following steps:
 
 1. replace the proto file at **protos/gateway.proto**
 2. run command 

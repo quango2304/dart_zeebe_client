@@ -271,6 +271,7 @@ const EvaluateDecisionResponse$json = {
     {'1': 'failedDecisionId', '3': 9, '4': 1, '5': 9, '10': 'failedDecisionId'},
     {'1': 'failureMessage', '3': 10, '4': 1, '5': 9, '10': 'failureMessage'},
     {'1': 'tenantId', '3': 11, '4': 1, '5': 9, '10': 'tenantId'},
+    {'1': 'decisionInstanceKey', '3': 12, '4': 1, '5': 3, '10': 'decisionInstanceKey'},
   ],
 };
 
@@ -285,7 +286,8 @@ final $typed_data.Uint8List evaluateDecisionResponseDescriptor = $convert.base64
     'YXRlZERlY2lzaW9ucxgIIAMoCzIjLmdhdGV3YXlfcHJvdG9jb2wuRXZhbHVhdGVkRGVjaXNpb2'
     '5SEmV2YWx1YXRlZERlY2lzaW9ucxIqChBmYWlsZWREZWNpc2lvbklkGAkgASgJUhBmYWlsZWRE'
     'ZWNpc2lvbklkEiYKDmZhaWx1cmVNZXNzYWdlGAogASgJUg5mYWlsdXJlTWVzc2FnZRIaCgh0ZW'
-    '5hbnRJZBgLIAEoCVIIdGVuYW50SWQ=');
+    '5hbnRJZBgLIAEoCVIIdGVuYW50SWQSMAoTZGVjaXNpb25JbnN0YW5jZUtleRgMIAEoA1ITZGVj'
+    'aXNpb25JbnN0YW5jZUtleQ==');
 
 @$core.Deprecated('Use evaluatedDecisionDescriptor instead')
 const EvaluatedDecision$json = {
